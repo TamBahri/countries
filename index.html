@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link href="style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
 
-  <body>
-    <div id="root"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style dark.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e62f6f820.js" crossorigin="anonymous"></script>
+</head>
 
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
+<body>
+    <div id="root">
+        <div id="navbar" class="navbar row">
+            <div class="col-12 md-col-6 lg-col-6 sm-col-6 ">
+                <h2 id="navbar-title" class="title">Where in the world?</h2>
+            </div>
+            <div class="col-12 md-col-6 lg-col-6 sm-col-6">
+                <div class="dark">
+                    <i id="moon" class="far fa-moon"></i>
+                    <button id="navBtn" class="light-btn" onclick="darkMode(); changeDarkBtn()">Dark
+                        Mode</button>
+                </div>
+            </div>
+        </div>
+        <div id="container-countryPage" class="container search">
+            <div class="row">
+                <div class="col-12 md-col-6 lg-col-6 xl-col-3 sm-col-12">
+                    <div class="input-search">
+                        <i class="fas fa-search"></i>
+                        <input id="search-input" type="text" placeholder="Search for a country..."
+                            oninput="searchCountry()"></input>
+                    </div>
+                </div>
+                <div class="col-12 md-col-6 lg-col-6 xl-col-9 sm-col-12">
+                    <div class="custom-select">
+                        <select id="filter-region" onchange="filterByOrigin()">
+                            <option id="default">Filter by Region</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Americas">Americas</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Oceania">Oceania</option>
+                        </select>
+                    </div>
 
-    <!-- Loads YOUR javascript code -->
+                </div>
+            </div>
+        </div>
+
+        <div id="country-container" class="container">
+            <div id="country-row" class="row"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
-  </body>
+    <script src="darkMode.js"></script>
+</body>
+
 </html>

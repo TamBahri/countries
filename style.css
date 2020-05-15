@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.navbar {
+  background-color: hsl(0, 0%, 100%);
+  height: 60px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 2px 2px 8px #999999;
+  z-index: 1;
+}
+
+.title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding-left: 30px;
+  color: hsl(200, 15%, 8%);
+}
+
+.dark {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.light-btn {
+  color: hsl(200, 15%, 8%);
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 0.7em;
+  font-weight: 800;
+  outline: none;
+  padding: 5px;
+}
+
+.fa-moon {
+  font-size: 19px;
+}
+
+.search {
+  margin-top: 20px;
+  color: hsl(200, 15%, 8%);
+}
+
+.fa-search {
+  color: hsl(200, 15%, 8%);
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  box-shadow: 1px 1px 10px #888888;
+  outline: none;
+  padding-left: 50px;
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: hsl(200, 15%, 8%);
+}
+
+.custom-select {
+  text-align: left;
+  margin-top: 20px;
+}
+
+select {
+  width: 200px;
+  height: 50px;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  border: none;
+  padding-left: 10px;
+  box-shadow: 2px 2px 10px #888888;
+  margin-top: 20px;
+  color: hsl(200, 15%, 8%);
+}
+
+.fa-search {
+  position: absolute;
+  padding: 18px;
+  width: 50px;
+  height: 50px;
+  color: ;
+}
+
+.country-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.img-card {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  box-shadow: 2px 2px 10px #888888;
+  object-fit: cover;
+}
+
+.content-card {
+  width: 300px;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content-card:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  text-align: left;
+  margin-left: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: hsl(200, 15%, 8%);
+}
+
+p {
+  text-align: left;
+  font-weight: 600;
+  margin-left: 20px;
+  padding-top: 5px;
+  color: hsl(200, 15%, 8%);
+}
+
+.content-card p span {
+  font-weight: 300;
+  color: hsl(200, 15%, 8%);
+}
+
+.country-link {
+  cursor: pointer;
+}
+
+.top-domain {
+  margin-top: 30px;
+}
+
+.borders-btn {
+  background-color: hsl(0, 0%, 100%);
+  margin: 10px;
+  cursor: pointer;
+  font-weight: 300;
+  border: 1px solid #999999;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.borders-btn:hover {
+  background-color: hsl(0, 0%, 98%);
+  transform: scale(1.1);
+}
+
+.single-country {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.single-country-img img {
+  width: 300px;
+  height: 200px;
+}
+
+.country-content {
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.country-content h3 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.div-borders p {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.div-top {
+  margin-top: 20px;
+}
+
+.div-top p span {
+  font-weight: 300;
+}
+
+.div-top p {
+  font-weight: 600;
+}
+
+.div-name p span {
+  font-weight: 300;
+}
+
+.div-name p {
+  font-weight: 600;
+}
+
+.backBtn {
+  font-weight: 300;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.div-backBtn {
+  max-width: 150px;
+  margin-left: 18px;
+  margin-top: 50px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999999;
+  cursor: pointer;
+}
+
+.div-backBtn:hover {
+  transform: scale(1.1);
+}
+
+#filter-region {
+  outline: none;
+}
+
+@media (min-width: 500px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .light-btn {
+    font-size: 1em;
+  }
+
+  .custom-select {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .single-country-img img {
+    width: 400px;
+    height: 300px;
+  }
+
+  .fa-moon {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .light-btn {
+    font-size: 1.1em;
+  }
+
+  input {
+    width: 300px;
+  }
+
+  select {
+    margin: 0;
+  }
+
+  .custom-select {
+    text-align: right;
+    margin-top: 0px;
+  }
+
+  .country-card {
+    padding: 0px;
+  }
+
+  .single-country-img img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .fa-moon {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-card {
+    width: 300px;
+    margin: 0px;
+  }
+
+  .content-card {
+    width: 300px;
+  }
+
+  .country-card {
+    padding: 0px;
+  }
+
+  .single-country-img img {
+    width: 500px;
+    height: 300px;
+  }
+}
